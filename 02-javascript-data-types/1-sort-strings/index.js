@@ -1,4 +1,4 @@
-const collator = new Intl.Collator(['ru', 'en'], { caseFirst: "upper" });
+const collator = new Intl.Collator(["ru", "en"], { caseFirst: "upper" });
 
 /**
  * sortStrings - sorts array of string by two criteria "asc" or "desc"
