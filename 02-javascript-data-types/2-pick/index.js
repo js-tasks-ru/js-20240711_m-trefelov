@@ -8,10 +8,8 @@ export const pick = (obj, ...keys) => {
   const result = {};
 
   for (const key of keys) {
-    const value = obj[key];
-
-    if (value != null) {
-      result[key] = value;
+    if (Object.hasOwn(obj, key)) {
+      result[key] = obj[key];
     }
   }
 
