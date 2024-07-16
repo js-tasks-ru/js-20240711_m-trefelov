@@ -7,7 +7,9 @@ const collator = new Intl.Collator(["ru", "en"], { caseFirst: "upper" });
  * @returns {string[]}
  */
 export function sortStrings(arr, param = "asc") {
-  return [...arr].sort((a, b) =>
-    param === "asc" ? collator.compare(a, b) : collator.compare(b, a)
+  return [...arr].sort(
+    param === "asc"
+      ? (a, b) => collator.compare(a, b)
+      : (a, b) => collator.compare(b, a)
   );
 }
