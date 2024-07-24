@@ -124,7 +124,7 @@ export default class ColumnChart {
     return _values.map((value) => {
       return {
         percent: ((value / maxValue) * 100).toFixed(0) + "%",
-        value: Math.floor(value * scale).toString(),
+        value: Math.floor(value * scale),
       };
     });
   }
