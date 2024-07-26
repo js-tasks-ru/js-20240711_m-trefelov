@@ -162,6 +162,5 @@ export default class ColumnChart {
 
   destroy() {
     this.remove();
-    this._element = null;
   }
 }
