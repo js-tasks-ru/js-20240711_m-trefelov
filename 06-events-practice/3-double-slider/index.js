@@ -99,6 +99,9 @@ export default class DoubleSlider {
     }
   }
 
+  /**
+   * @param {number} clientX
+   */
   _handleLeftThumbMove(clientX) {
     const { min, max, subElements, formatValue } = this;
     const { width, left } = subElements.inner.getBoundingClientRect();
@@ -115,6 +118,9 @@ export default class DoubleSlider {
     subElements.leftThumb.style.left = percent;
   }
 
+  /**
+   * @param {number} clientX
+   */
   _handleRightThumbMove(clientX) {
     const { min, max, subElements, formatValue } = this;
     const { width, left, right } = subElements.inner.getBoundingClientRect();
